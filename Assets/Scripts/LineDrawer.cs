@@ -56,7 +56,7 @@ public class LineDrawer : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             time--;
-            startCountDownText.text = time.ToString("0");
+            startCountDownText.text = time.ToString();
         }
             canPaint = true;
             startCount = false;
@@ -107,18 +107,18 @@ public class LineDrawer : MonoBehaviour
 
             if (canPaint)
             {
-                v1 = trackingObject.transform.position;
-                InvokeRepeating("V2", 0.05f, 0);
+                //v1 = trackingObject.transform.position;
+                //InvokeRepeating("V2", 0.05f, 0);
 
-                if (v1 != v2)
-                {
+                //if (v1 != v2)
+               // {
 
                     ring.SetActive(false);
 
                     Instantiate(sphereObject, trackingObject.transform.position, quaternion, stage.transform);//OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch)+offset
                     numbersOfSpheres++;
 
-                }
+                //}
             }
 
            
