@@ -140,6 +140,7 @@
     <Compile Include="Assets\PostProcessing\Editor\Models\ColorGradingModelEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\PropertyDrawers\TrackballGroupDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\SABoneCollider.cs" />
+    <Compile Include="Assets\Editor\ReferenceFinder.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\SABoneColliderChild.cs" />
     <Compile Include="Assets\Scripts\Editor\SABoneColliderCommon.cs" />
@@ -179,7 +180,6 @@
     <Compile Include="Assets\VLights\Editor\VolumeLightCreator.cs" />
     <Compile Include="Assets\Scripts\Editor\createStage\CheckPrefabs.cs" />
     <Compile Include="Assets\VolumetricFog\Editor\VolumetricFogAbout.cs" />
-    <Compile Include="Assets\Editor\ReferenceFinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Editor\x64\Bakery\frender.dll" />
