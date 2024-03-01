@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ca84e725c7c764aa5ed097918d14b7, type: 3}
+  m_Name: ftLocalStorage
+  m_EditorClassIdentifier: 
+  modifiedAssetPathList:
+  - Assets/Bakery/examples/content/sponza/sponza.FBX
+  - Assets/Scenes/NeonLigft.fbx
+  - Assets/Stage/Stage.fbx
+  - Assets/Timer/Timer.fbx
+  - Assets/Stage/Stage2.fbx
+  - Assets/Stage/Stage3.fbx
+  - Assets/Stage/Stage4.fbx
+  - Assets/Stage/Stage5.fbx
+  - Assets/Stage/Stage6.fbx
+  - Assets/Stage/Stage7.fbx
+  - Assets/Stage/Stage8.fbx
+  - Assets/Stage/Stage9.fbx
+  - Assets/Stage/Stage10.fbx
+  - Assets/Stage/Stage11.fbx
+  - Assets/Stage/Stage12.fbx
+  - Assets/prefabs/Light.fbx
+  - Assets/Scenes/Stage12.fbx
+  modifiedAssetPaddingHash: d6a958ffecc12491c924d993bc4608c8abb2979d8f7d734029eb1091534ffff0ee37ed040aa3ddde5bc2a693b4c2a693f1f23a063c4efff080c5d890fee2df8b3e3fd3d9

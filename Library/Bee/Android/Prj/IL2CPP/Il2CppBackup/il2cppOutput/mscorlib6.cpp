@@ -21077,6 +21077,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GC_get_MaxGeneration_m44E4B9FFC90D082
 		return L_0;
 	}
 }
+// System.Void System.GC::WaitForPendingFinalizers()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_WaitForPendingFinalizers_m0FA950AA1D612E4DEBBCF1C9C632D0EEFB59E80B (const RuntimeMethod* method) 
+{
+	typedef void (*GC_WaitForPendingFinalizers_m0FA950AA1D612E4DEBBCF1C9C632D0EEFB59E80B_ftn) ();
+	using namespace il2cpp::icalls;
+	((GC_WaitForPendingFinalizers_m0FA950AA1D612E4DEBBCF1C9C632D0EEFB59E80B_ftn)mscorlib::System::GC::WaitForPendingFinalizers) ();
+}
 // System.Void System.GC::_SuppressFinalize(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC__SuppressFinalize_mF52D020DC0078E16E8CD084A99E261D93FC24650 (RuntimeObject* ___o0, const RuntimeMethod* method) 
 {
