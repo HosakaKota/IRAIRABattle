@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,32 +6,32 @@ public class EightScript : MonoBehaviour
 {
     const float pai = 0.71f;
 
-    //Šî‘b“I‚È•Ï”
-    const float cons = 2;//”¼Œa‚Ì2”{(’¼Œa)
+    //åŸºç¤çš„ãªå¤‰æ•°
+    const float cons = 2;//åŠå¾„ã®2å€(ç›´å¾„)
 
     public BoxMove tes;
-    public float slash = 1.0f;//Î•Ó‚Ì’·‚³iƒ‰ƒCƒ“‚Ì³Šm‹ï‡j
+    public float slash = 1.0f;//æ–œè¾ºã®é•·ã•ï¼ˆãƒ©ã‚¤ãƒ³ã®æ­£ç¢ºå…·åˆï¼‰
     Vector3 tmp = new Vector3(0, 0, 0)
-        , tp = new Vector3(0, 0, 0);//tp‚ÍŠJn’n“_
-    public Vector3 VecFront, VecBack;//Ÿ‚ÌƒIƒuƒWƒFƒNƒg¶¬@‚Ö‚Ì@ƒxƒNƒgƒ‹‚ÌŠp“x
-    public float time, SetTime = 3;//Debug‚æ‚¤‚Ég‚Á‚Ä‚½•Ï”
+        , tp = new Vector3(0, 0, 0);//tpã¯é–‹å§‹åœ°ç‚¹
+    public Vector3 VecFront, VecBack;//æ¬¡ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç”Ÿæˆã€€ã¸ã®ã€€ãƒ™ã‚¯ãƒˆãƒ«ã®è§’åº¦
+    public float time, SetTime = 3;//Debugã‚ˆã†ã«ä½¿ã£ã¦ãŸå¤‰æ•°
 
 
-    //ƒ|ƒŠƒSƒ“‚©‚ç‚ÌƒIƒuƒWƒFƒNƒg¶¬‚É•K—v‚È•Ï”
+    //ãƒãƒªã‚´ãƒ³ã‹ã‚‰ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç”Ÿæˆæ™‚ã«å¿…è¦ãªå¤‰æ•°
     public Material mat;
     Mesh mesh;
-    Vector3 Vofset;//ˆÚ“®ƒxƒNƒgƒ‹
+    Vector3 Vofset;//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«
     Vector3 points = new Vector3();
-    List<Vector3> vertices = new List<Vector3>();//ƒ|ƒŠƒSƒ“‚ÌÀ•WƒŠƒXƒg
+    List<Vector3> vertices = new List<Vector3>();//ãƒãƒªã‚´ãƒ³ã®åº§æ¨™ãƒªã‚¹ãƒˆ
 
-    List<Vector2> uvs = new List<Vector2>();//ƒ|ƒŠƒSƒ“•`Ê‚Ì
+    List<Vector2> uvs = new List<Vector2>();//ãƒãƒªã‚´ãƒ³æå†™ã®
     float xoffset = 0;
 
-    List<int> tris = new List<int>();//uv“\‚è•t‚¯ƒŠƒXƒg
+    List<int> tris = new List<int>();//uvè²¼ã‚Šä»˜ã‘ãƒªã‚¹ãƒˆ
     int offset = 0;
 
     float ofset = 0.0f,
-           xofset = 1.2f;//”¼Œa‚Ì‘å‚«‚³
+           xofset = 1.2f;//åŠå¾„ã®å¤§ãã•
 
 
 
@@ -48,29 +48,29 @@ public class EightScript : MonoBehaviour
 
     public void makeStage()
     {
-        //¶ƒNƒŠƒbƒNÅ‰‚Ì
+        //å·¦ã‚¯ãƒªãƒƒã‚¯æœ€åˆã®
         if (Input.GetMouseButtonDown(0))
         {
             tp = tes.targetPosition();//
             makeFirstLine(tp);
         }
-        else if (Input.GetMouseButton(0))//‚»‚ÌŒã‚Ì¶ƒNƒŠƒbƒN
+        else if (Input.GetMouseButton(0))//ãã®å¾Œã®å·¦ã‚¯ãƒªãƒƒã‚¯
         {
             tmp = tes.targetPosition();
-            float slashTmp = DistanceDifference(tp.x - tmp.x, tp.y - tmp.y);//Ÿ‚ÌƒIƒuƒWƒFƒNƒg¶¬‚Ü‚Å‚Ì‹——£
+            float slashTmp = DistanceDifference(tp.x - tmp.x, tp.y - tmp.y);//æ¬¡ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç”Ÿæˆã¾ã§ã®è·é›¢
 
 
-            //VecBack = VecQy(tp, tmp);//‰œsƒxƒNƒgƒ‹ƒxƒNƒgƒ‹‚ÌŠp“x
+            //VecBack = VecQy(tp, tmp);//å¥¥è¡Œãƒ™ã‚¯ãƒˆãƒ«ãƒ™ã‚¯ãƒˆãƒ«ã®è§’åº¦
 
             Debug.Log("VecQx" + VecFront);
-            if (Mathf.Abs(slashTmp) > slash)//ˆê’è”ÍˆÍ“à‚Å‚ ‚ê‚Î
+            if (Mathf.Abs(slashTmp) > slash)//ä¸€å®šç¯„å›²å†…ã§ã‚ã‚Œã°
             {
 
                 VecFront = VecQx(tp, tmp);//
 
                 // Debug.Log(tes.targetPosition());
                 makeLine(tp);
-                tp = tmp;//ŠJnƒ|ƒWƒVƒ‡ƒ“‚ğXV
+                tp = tmp;//é–‹å§‹ãƒã‚¸ã‚·ãƒ§ãƒ³ã‚’æ›´æ–°
             }
         }
 
@@ -86,26 +86,26 @@ public class EightScript : MonoBehaviour
         */
         Vector3 vec = dt.normalized;
         return vec;
-    }//³–ÊƒxƒNƒgƒ‹‚ÌŠp“x‚ğ•Ô‚·B
+    }//æ­£é¢ãƒ™ã‚¯ãƒˆãƒ«ã®è§’åº¦ã‚’è¿”ã™ã€‚
     public int VecQy(Vector3 tp, Vector3 tmp)
     {
         Vector3 dt = tp - tmp;
         float rad = Mathf.Atan2(dt.z, dt.x);
         float vecY = rad * Mathf.Rad2Deg;
         return (int)vecY;
-    }//‰œsƒxƒNƒgƒ‹‚ÌŠp“x‚ğ•Ô‚·B
+    }//å¥¥è¡Œãƒ™ã‚¯ãƒˆãƒ«ã®è§’åº¦ã‚’è¿”ã™ã€‚
 
     public Vector3 VecD(Vector3 tp, Vector3 tmp)
     {
         Vector3 vec = tp + tmp;
         return vec;
-    }//“ñ“_ŠÔƒxƒNƒgƒ‹‚ğ•Ô‚·
+    }//äºŒç‚¹é–“ãƒ™ã‚¯ãƒˆãƒ«ã‚’è¿”ã™
 
     public float DistanceDifference(float X, float Y)
     {
         float Distance = Mathf.Sqrt(Mathf.Pow(X, 2) + Mathf.Pow(Y, 2));
         return Distance;
-    }//Î•Ó‚Ì’l‚ğ•Ô‚·
+    }//æ–œè¾ºã®å€¤ã‚’è¿”ã™
 
     float a = 1.2f, UVoffset = 0;
     public void makebox()
@@ -192,17 +192,17 @@ public class EightScript : MonoBehaviour
         GetComponent<MeshRenderer>().material = mat;
 
     }
-    //ªg‚í‚È‚¢‚¯‚ÇQl‚É
+    //â†‘ä½¿ã‚ãªã„ã‘ã©å‚è€ƒã«
 
     public void makeFirstLine(Vector3 tp)
     {
-        Vofset = tp;//ŠJn’n“_‚ÌƒxƒNƒgƒ‹
+        Vofset = tp;//é–‹å§‹åœ°ç‚¹ã®ãƒ™ã‚¯ãƒˆãƒ«
         //Debug.Log(Vofset);
-        // ŠJn“_‚ğ•Û‘¶
+        // é–‹å§‹ç‚¹ã‚’ä¿å­˜
         points = Vofset;
 
-        // ’¸“_‚ğ4‚Â¶¬
-        //ˆê’è‚Ì•‚Ì’¸“_‚ğ§ì
+        // é ‚ç‚¹ã‚’4ã¤ç”Ÿæˆ
+        //ä¸€å®šã®å¹…ã®é ‚ç‚¹ã‚’åˆ¶ä½œ
         this.vertices.Add(Vofset + new Vector3(0, 0, xofset));
         this.vertices.Add(Vofset + new Vector3(0, xofset * pai, xofset * pai));
         this.vertices.Add(Vofset + new Vector3(0, xofset, 0));
@@ -224,7 +224,7 @@ public class EightScript : MonoBehaviour
         new Vector3 (a , -a, 0), 
          */
 
-        // uvÀ•W‚ğİ’è
+        // uvåº§æ¨™ã‚’è¨­å®š
         this.uvs.Add(new Vector2(0, 0));
         this.uvs.Add(new Vector2(0, 1));
 
@@ -242,7 +242,7 @@ public class EightScript : MonoBehaviour
 
         this.offset = 0;
 
-        // ƒƒbƒVƒ…¶¬
+        // ãƒ¡ãƒƒã‚·ãƒ¥ç”Ÿæˆ
         this.mesh = new Mesh();
     }
     public void makeLine(Vector3 Vofset3)
@@ -255,9 +255,9 @@ public class EightScript : MonoBehaviour
         Vector3 mZmY = Vofset3 + new Vector3(xofset * cons,      -xofset * pai, -xofset * pai);
         Vector3 Yminus90 = Vofset3 + new Vector3(xofset * cons,     -xofset, 0);
         Vector3 mZY = Vofset3 + new Vector3(xofset * cons,      -xofset * pai, xofset * pai);
-        //Œ³‚ÌƒxƒNƒgƒ‹{X²
+        //å…ƒã®ãƒ™ã‚¯ãƒˆãƒ«ï¼‹Xè»¸
 
-        Vofset += new Vector3(xofset * cons, xofset * cons, 0);//ˆÚ“®ƒxƒNƒgƒ‹
+        Vofset += new Vector3(xofset * cons, xofset * cons, 0);//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«
 
 
 
@@ -265,7 +265,7 @@ public class EightScript : MonoBehaviour
         //  Debug.Log("minus90 =" + minus90);
 
 
-        // ’¸“_‚ğ’Ç‰Á
+        // é ‚ç‚¹ã‚’è¿½åŠ 
         this.vertices.Add(Zplus90);
         this.vertices.Add(ZY);
         this.vertices.Add(Yplus90);
@@ -275,7 +275,7 @@ public class EightScript : MonoBehaviour
         this.vertices.Add(Yminus90); 
         this.vertices.Add(mZY);
 
-        // UV‚ğ’Ç‰Á
+        // UVã‚’è¿½åŠ 
         this.uvs.Add(new Vector2(xoffset, 0));
         this.uvs.Add(new Vector2(xoffset, 1));
         xoffset += 1;
@@ -300,7 +300,7 @@ public class EightScript : MonoBehaviour
     };*/
 
 
-        // ƒCƒ“ƒfƒbƒNƒX‚ğ’Ç‰Á
+        // ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’è¿½åŠ 
         this.tris.Add(offset + 0);
         this.tris.Add(offset + 8);
         this.tris.Add(offset + 1);
@@ -390,7 +390,7 @@ public class EightScript : MonoBehaviour
 
     }
 
-    /*ˆê’è•b”‚¦‚éŠÖ”B
+    /*ä¸€å®šç§’æ•°ãˆã‚‹é–¢æ•°ã€‚
     bool waitTime()
     {
         time += Time.deltaTime;
