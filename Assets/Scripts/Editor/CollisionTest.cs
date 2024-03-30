@@ -12,17 +12,17 @@ public class CollisionTest : MonoBehaviour
     GameObject CounterObject;
     [SerializeField] float frequency = 10f;
     [SerializeField] float amplitude = 10f;
-    [SerializeField]Material defaultColor;
-    [SerializeField]Material damgeColor;
-    [SerializeField]ParticleSystem particle;
+    [SerializeField] Material defaultColor;
+    [SerializeField] Material damgeColor;
+    [SerializeField] ParticleSystem particle;
 
     public PlayTimeManager timeManager;
-    int seconds=0;
+    int seconds = 0;
     [SerializeField] TextMeshPro playTime;
     bool flag;
     private void Start()
     {
-       
+
         timeManager = GameObject.FindObjectOfType<PlayTimeManager>();
         //OutCollider = GameObject.Find("OutCollider").GetComponent<OutCollider>();
         defaultColor = GetComponent<MeshRenderer>().material;
@@ -36,19 +36,19 @@ public class CollisionTest : MonoBehaviour
         {
             if (timeManager.startedGame)
             {
-               // timeManager.StartProtectingSystem(1);
-                Debug.Log(collision.gameObject.name + "----------------------------------------------------------------------------------------------collisionenter");
+                //timeManager.StartProtectingSystem(1);
+                //Debug.Log(collision.gameObject.name + "----------------------------------------------------------------------------------------------collisionenter");
                 //if (flag)
                 //{
-                    //CounterEvent();
-                    particle.Play();
-                    OVRInput.SetControllerVibration(frequency, amplitude, OVRInput.Controller.RTouch);
-                    timeManager.OnMissPlay();
-               // }
+                //CounterEvent();
+                particle.Play();
+                OVRInput.SetControllerVibration(frequency, amplitude, OVRInput.Controller.RTouch);
+                timeManager.OnMissPlay();
+                // }
                 //GetComponent<MeshRenderer>().material = damgeColor;
             }
         }
-       
+
 
     }
     private void OnCollisionExit(Collision collision)
@@ -58,7 +58,7 @@ public class CollisionTest : MonoBehaviour
             if (timeManager.startedGame)
             {
                 Debug.Log(collision.gameObject.name + "---------collisionexit");
-               // flag = true;
+                // flag = true;
 
                 particle.Stop();
                 //GetComponent<MeshRenderer>().material = defaultColor;
@@ -66,7 +66,7 @@ public class CollisionTest : MonoBehaviour
 
             }
         }
-           
+
 
 
     }
@@ -94,7 +94,7 @@ public class CollisionTest : MonoBehaviour
     IEnumerator CountUp()
     {
         yield return new WaitForSeconds(1);
-        seconds+=1;
+        seconds += 1;
         playTime.text = seconds.ToString();
     }
 }

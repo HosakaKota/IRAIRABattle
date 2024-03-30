@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckPrefabs : MonoBehaviour
 {
-    
+
     public bool passed = false;
     public bool onCheck;
     Transform parentOfThis;
@@ -18,8 +18,8 @@ public class CheckPrefabs : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        if (other.gameObject.tag == "Stick"&&transform.GetSiblingIndex()==0&&FindObjectOfType<PlayTimeManager>().startedGame==true)
+
+        if (other.gameObject.tag == "Stick" && transform.GetSiblingIndex() == 0 && FindObjectOfType<PlayTimeManager>().startedGame == true)
         {
             if (onCheck)
             {

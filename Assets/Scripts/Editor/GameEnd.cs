@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameEnd : MonoBehaviour
 {
-    [SerializeField]GameObject Timer;
+    [SerializeField] GameObject Timer;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Stick")

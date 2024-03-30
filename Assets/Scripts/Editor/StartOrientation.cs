@@ -11,23 +11,11 @@ public class StartOrientation : MonoBehaviour
     [SerializeField] float Z_offset;
     Vector3 offset;
 
-   
-    //Vector3 handOffset;
-
-    // [Header("Hand Offset")]
-    // [SerializeField] GameObject HandGrabInteractor;
-    // [SerializeField] float X_HandOffset;
-    // [SerializeField] float Y_HandOffset;
-    // [SerializeField] float Z_HandOffset;
-
     void Start()
     {
-        
+
 
         offset = new(X_offset, Y_offset, Z_offset);
-        // handOffset = new(X_HandOffset, Y_HandOffset, Z_HandOffset);
-        //HandGrabInteractor.transform.position = handOffset;
-        //GameObject.Find("HandGrabInteractable").transform.position -= handOffset;
         Invoke("Follow", 1);
 
     }

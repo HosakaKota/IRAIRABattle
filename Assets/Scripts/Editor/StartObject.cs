@@ -7,7 +7,7 @@ public class StartObject : MonoBehaviour
 {
     PlayTimeManager timeManager;
     bool first = true;
-    
+
 
     private void Start()
     {
@@ -32,7 +32,6 @@ public class StartObject : MonoBehaviour
             }
             GetComponent<CheckPrefabs>().passed = true;
             GetComponent<MeshRenderer>().enabled = false;
-            //Destroy(gameObject);
         }
     }
 }

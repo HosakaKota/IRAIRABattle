@@ -6,10 +6,10 @@ using Oculus.Interaction.Grab;
 
 public class CheckIsMoved : MonoBehaviour
 {
- 
-    public  bool painterIsMoved;
 
-   public void IsMoved()
+    public bool painterIsMoved;
+
+    public void IsMoved()
     {
         painterIsMoved = true;
     }

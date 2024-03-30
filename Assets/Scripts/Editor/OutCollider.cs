@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class OutCollider : MonoBehaviour
 {
-    public  bool outRange = false;
-    public  bool firstTouch = true;
+    public bool outRange = false;
+    public bool firstTouch = true;
 }

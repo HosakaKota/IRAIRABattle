@@ -10,8 +10,8 @@ public class PlayListManager : MonoBehaviour
     public Vector2 vectorR_PlayList;
     List<PlayListContent> datas = new();
     public static int stageID = 0;
-     List<GameObject> UIs = new();
-    int page = 0;  // 0,1,2,3     4,5,6,7
+    List<GameObject> UIs = new();
+    int page = 0;  // 0,1,2,3→4,5,6,7→8,9,10,11...
     public int number = 0;
     public float playListTime;
     public float SetTime = 0.1f;
@@ -53,20 +53,18 @@ public class PlayListManager : MonoBehaviour
 
         for (int i = 0; i < 4; i++)
         {
-            
-            if (page*4 +i < transform.childCount)
+
+            if (page * 4 + i < transform.childCount)
             {
                 transform.GetChild(page * 4 + i).gameObject.SetActive(true);
                 datas[page * 4 + i].InitiateContent();
-                //UIs[i].GetComponent<Image>().sprite = datas[page * 4 + i].stageScreenShot;
-                //UIs[i].GetComponentInChildren<TextMeshProUGUI>().text = datas[page * 4 + i].stageName;
             }
             else
             {
                 page--;
                 RefreshPlayList();
             }
-            
+
         }
     }
 
@@ -81,7 +79,7 @@ public class PlayListManager : MonoBehaviour
                 return;
             }
 
-            if(vectorR_PlayList.y > buttonSpeed)
+            if (vectorR_PlayList.y > buttonSpeed)
             {
                 VerticleChoose(false);
                 return;
@@ -101,19 +99,18 @@ public class PlayListManager : MonoBehaviour
         }
         if (OVRInput.GetDown(OVRInput.RawButton.A))
         {
-            //NewQuadScript.testStage = true;
             Debug.Log(number + 4 * page - 2 + "-------------------" + FindObjectOfType<SavePositions>().StageID);
-            if (number+4*page-2<FindObjectOfType<SavePositions>().StageID|| number + 4 * page - 2==0)  //  0  2
+            if (number + 4 * page - 2 < FindObjectOfType<SavePositions>().StageID || number + 4 * page - 2 == 0)  //  0  2
             {
                 SceneManager.LoadScene("play");
-                FindObjectOfType<Always>().tempDataFromMenu = transform.GetChild(number+page*4+1).GetComponent<PlayListContent>().stageData;
+                FindObjectOfType<Always>().tempDataFromMenu = transform.GetChild(number + page * 4 + 1).GetComponent<PlayListContent>().stageData;
             }
             else
             {
-                Debug.Log("reddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd");
+                //Debug.Log("reddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd");
                 transform.GetChild(number + 4 * page).GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
             }
-            
+
         }
     }
 
@@ -122,7 +119,7 @@ public class PlayListManager : MonoBehaviour
         if (UpOrDown)
         {
             number += 2;
-            if (number>3)
+            if (number > 3)
             {
                 page++;
                 RefreshPlayList();
@@ -132,15 +129,15 @@ public class PlayListManager : MonoBehaviour
         else
         {
             number -= 2;
-            if (number<0)
+            if (number < 0)
             {
                 page--;
-                if (page<0)
+                if (page < 0)
                 {
                     page = 0;
                 }
                 RefreshPlayList();
-                number +=4;
+                number += 4;
             }
         }
         ColoringChoice(number);
@@ -150,14 +147,6 @@ public class PlayListManager : MonoBehaviour
     {
         if (LeftOrRight) // to right
         {
-            /*
-            number += 1;
-            if (number > 3)
-            {
-                number = 3;
-            }
-            */
-
             if (number == 0)
             {
                 number = 1;
@@ -169,13 +158,7 @@ public class PlayListManager : MonoBehaviour
         }
         else  // to left
         {
-            /*
-            number -= 1;
-            if (number<0)
-            {
-                number = 0;
-            }
-            */
+
             if (number == 1)
             {
                 number = 0;
@@ -185,7 +168,7 @@ public class PlayListManager : MonoBehaviour
                 number = 2;
             }
         }
-        ColoringChoice(page*4 + number);
+        ColoringChoice(page * 4 + number);
     }
 
 
@@ -213,7 +196,7 @@ public class PlayListManager : MonoBehaviour
         {
             if (transform.GetChild(i).gameObject.activeSelf)   // is this gameobject active?
             {
-                if (i - page*4 ==number)
+                if (i - page * 4 == number)
                 {
                     transform.GetChild(i).gameObject.GetComponent<Image>().color = choiceColor;
                 }

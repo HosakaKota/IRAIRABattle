@@ -22,12 +22,6 @@ public class CheckPoints : MonoBehaviour
         for (int i = 0; i < points.Length; i++)
         {
             string findname = "SAVEPOINT(Clone)";
-            /*if(i > 0)
-            {
-                findname = "SavePoints(" + i.ToString() + ")";
-                Debug.Log("findname = " + findname);
-            }*/
-            //findname = "SavePrefab(Clone)";
             points[i] = GameObject.Find(findname);
             GameObject g = GameObject.Find(findname);
             g.name = "Check" + i.ToString();

@@ -15,9 +15,9 @@ public class PlayListContent : MonoBehaviour
     {
         if (!isDemo)
         {
-            GetComponentInChildren<TextMeshProUGUI>().text = (stageData.ID +1).ToString();
+            GetComponentInChildren<TextMeshProUGUI>().text = (stageData.ID + 1).ToString();
         }
-        
+
     }
 
 }

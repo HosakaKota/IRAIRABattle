@@ -18,7 +18,7 @@ public class NewQuadScript : MonoBehaviour
     public Vector3 zure = new Vector3(10, 10, 0);
     public string[] Pathes;
 
-    public GameObject[] savesprefab ;//足した部分
+    public GameObject[] savesprefab;//足した部分
     public GameObject singlesaveprefab;
     public GameObject saveManager;
 
@@ -37,47 +37,47 @@ public class NewQuadScript : MonoBehaviour
 
     //public GameObject test1;
 
-     float xoffset = 0;
+    float xoffset = 0;
     int offset = 0;
 
-    
+
 
     //基礎的な変数
-    const float             cons = 2;//半径の2倍(直径)
+    const float cons = 2;//半径の2倍(直径)
 
-    public BoxMove          tes;
+    public BoxMove tes;
 
-    public float            slash = 0.24f;//斜辺の長さ（ラインの正確具合）
+    public float slash = 0.24f;//斜辺の長さ（ラインの正確具合）
 
-           Vector3          tmp = new Vector3(0, 0, 0)
-            ,               tp = new Vector3(0, 0, 0)
-            ,               Vec;//tpは開始地点
+    Vector3 tmp = new Vector3(0, 0, 0)
+     , tp = new Vector3(0, 0, 0)
+     , Vec;//tpは開始地点
 
-    public float            VecFront, VecUp,VecSide;//次のオブジェクト生成　への　ベクトルの角度
-    public float            time, SetTime = 3;//Debugように使ってた変数
+    public float VecFront, VecUp, VecSide;//次のオブジェクト生成　への　ベクトルの角度
+    public float time, SetTime = 3;//Debugように使ってた変数
 
 
     //ポリゴンからのオブジェクト生成時に必要な変数
-    public Material         mat;
-    public Mesh      mesh;
-           Vector3          Vofset;//移動ベクトル
-           Vector3          points = new Vector3();
+    public Material mat;
+    public Mesh mesh;
+    Vector3 Vofset;//移動ベクトル
+    Vector3 points = new Vector3();
 
-           List<Vector3>    ObjectPoint = new List<Vector3>();//ポリゴンの座標リスト
-           List<Vector3>    vertices = new List<Vector3>();//ポリゴンの座標リスト
-           List<Vector2>    uvs = new List<Vector2>();//ポリゴン描写の
-           List<int>        tris = new List<int>();//uv貼り付けリスト
-           float            UvOffset = 0;
-           int              verticesOffset = 0;
-           int              verticesNum = 0;//合計の頂点数,
-    public int              saveNum=10;//セーブポイントの数
+    List<Vector3> ObjectPoint = new List<Vector3>();//ポリゴンの座標リスト
+    List<Vector3> vertices = new List<Vector3>();//ポリゴンの座標リスト
+    List<Vector2> uvs = new List<Vector2>();//ポリゴン描写の
+    List<int> tris = new List<int>();//uv貼り付けリスト
+    float UvOffset = 0;
+    int verticesOffset = 0;
+    int verticesNum = 0;//合計の頂点数,
+    public int saveNum = 10;//セーブポイントの数
 
-    public int              pointNum = 0;//セーブポイントが作られた数
+    public int pointNum = 0;//セーブポイントが作られた数
 
-          [SerializeField] float            PositionOffset = 0.12f;//マテリアルの大きさの半分
-                                                                   //float xofset = 0.12f;//マテリアルの大きさの半分
+    [SerializeField] float PositionOffset = 0.12f;//マテリアルの大きさの半分
+                                                  //float xofset = 0.12f;//マテリアルの大きさの半分
 
-   // public static bool testStage = false;
+    // public static bool testStage = false;
 
 
 
@@ -199,7 +199,7 @@ public class NewQuadScript : MonoBehaviour
         //    //Debug.Log("dpath = " + Pathes[9]);
         //    additionalpath = Pathes[9];
         //}
-}
+    }
 
     public void makeStage()
     {
@@ -214,7 +214,7 @@ public class NewQuadScript : MonoBehaviour
             //Instantiate(test1,tp,new Quaternion(1,1,1,1));
             makeFirstLine(tp);
             LineDrawer.firstTime = false;
-           
+
         }
         else//偦偺屻偺嵍僋儕僢僋
         {
@@ -237,9 +237,9 @@ public class NewQuadScript : MonoBehaviour
                 VecFront = VecQx(Vec);//惓柺儀僋僩儖
                 VecUp = VecQy(Vec);//墱峴儀僋僩儖
                 VecSide = VecQz(Vec);//墶儀僋僩儖
-               // Debug.Log("VecQx" + VecFront);
-                //Debug.Log("QyVec" + VecBack);
-                // Debug.Log(tes.targetPosition());
+                                     // Debug.Log("VecQx" + VecFront);
+                                     //Debug.Log("QyVec" + VecBack);
+                                     // Debug.Log(tes.targetPosition());
                 makeLine(tp);
                 tp = tmp;//奐巒億僕僔儑儞傪峏怴
             }
@@ -350,7 +350,7 @@ public class NewQuadScript : MonoBehaviour
         this.vertices.Add(new Vector3(tp.x, tp.y, tp.z));
         this.vertices.Add(new Vector3(tp.x, tp.y, tp.z));
         this.vertices.Add(new Vector3(tp.x, tp.y, tp.z));
-        
+
         this.ObjectPoint.Add(Vofset);
         verticesNum++;
 
@@ -369,9 +369,9 @@ public class NewQuadScript : MonoBehaviour
         // uv嵗昗傪愝掕
         this.uvs.Add(new Vector2(0, 0));
         this.uvs.Add(new Vector2(0, 1));
-        
+
         this.uvs.Add(new Vector2(1, 0));
-        this.uvs.Add(new Vector2(1, 1)); 
+        this.uvs.Add(new Vector2(1, 1));
 
         xoffset += 2;
 
@@ -390,7 +390,7 @@ public class NewQuadScript : MonoBehaviour
         float SinUp = Mathf.Sin(VecUp) * FloorLine;
         float CosUp = Mathf.Cos(VecUp) * FloorLine;
         float SinSide = Mathf.Sin(VecSide) * FloorLine;
-        float CosSide= Mathf.Cos(VecSide) * FloorLine;
+        float CosSide = Mathf.Cos(VecSide) * FloorLine;
         //Debug.Log("VecUp CosUp===" + VecUp + CosUp);
         SinFront = Mathf.Floor(SinFront) / FloorLine;
         CosFront = Mathf.Floor(CosFront) / FloorLine;
@@ -411,22 +411,22 @@ public class NewQuadScript : MonoBehaviour
         if (-0.05 < CosSide && CosSide < 0.05)
             CosSide = 0;
 
-        Vector3 Zplus90 , Yplus90, Zminus90 ,Yminus90;
+        Vector3 Zplus90, Yplus90, Zminus90, Yminus90;
 
-        Zplus90 = Vofset3 + new Vector3(    -PositionOffset * (SinUp * CosFront),//
+        Zplus90 = Vofset3 + new Vector3(-PositionOffset * (SinUp * CosFront),//
                                             -((PositionOffset * (SinSide * SinFront))),//
                                             (PositionOffset * ((Mathf.Abs(CosUp) + Mathf.Abs(CosSide)) - (Mathf.Abs(CosUp) * Mathf.Abs(CosSide)))));//
 
-        Yplus90 = Vofset3 + new Vector3(    -(PositionOffset * (SinFront)),//
+        Yplus90 = Vofset3 + new Vector3(-(PositionOffset * (SinFront)),//
                                             (PositionOffset * (CosFront)),//
                                             -(PositionOffset * (SinUp * CosFront * SinFront)));//
 
 
-        Zminus90 = Vofset3 + new Vector3(   PositionOffset * (SinUp * CosFront),//
+        Zminus90 = Vofset3 + new Vector3(PositionOffset * (SinUp * CosFront),//
                                             ((PositionOffset * (SinSide * SinFront))),//
                                             -(PositionOffset * ((Mathf.Abs(CosUp) + Mathf.Abs(CosSide)) - (Mathf.Abs(CosUp) * Mathf.Abs(CosSide)))));//
 
-        Yminus90 = Vofset3 + new Vector3(   (PositionOffset * (SinFront)),//
+        Yminus90 = Vofset3 + new Vector3((PositionOffset * (SinFront)),//
                                             -(PositionOffset * (CosFront)),//
                                             (PositionOffset * (SinUp * CosFront * SinFront)));//
 
@@ -471,7 +471,7 @@ public class NewQuadScript : MonoBehaviour
 
 
         // 僀儞僨僢僋僗傪捛壛
-        this.tris.Add(offset+0);
+        this.tris.Add(offset + 0);
         this.tris.Add(offset + 4);
         this.tris.Add(offset + 1);
         this.tris.Add(offset + 4);
@@ -559,7 +559,7 @@ public class NewQuadScript : MonoBehaviour
     public void LoadStage(List<Vector3> v3)//ステージのロード
     {
         int count = v3.Count;
-        int savepoints = count / 10;//足した部分
+        int savepoints = count / 10;
 
         for (int i = 0; i < v3.Count; i++)
         {
@@ -598,7 +598,6 @@ public class NewQuadScript : MonoBehaviour
             {
                 CreatePoints(v3[i]);
             }
-            //足した部分
         }
         Instantiate(START, v3[0], new Quaternion(0, 0, 0, 0));
         Instantiate(END, v3[v3.Count - 1], new Quaternion(0, 0, 0, 0));
@@ -634,15 +633,15 @@ public class NewQuadScript : MonoBehaviour
         float PointNum = verticesNum / saveNum;
         for (int i = 0; i < saveNum; i++)
         {
-            pointNum = i+1;//外部参照用にpointNumに渡す：Elementpoint:セーブポイント用
+            pointNum = i + 1;//外部参照用にpointNumに渡す：Elementpoint:セーブポイント用
             CreatePoints(ObjectPoint[pointNum * i]);
         }
-        
+
     }
     public void CreatePoints(Vector3 v3)
     {
         //Instantiate(savesprefab[pointNum], v3, Quaternion.identity);
-        Instantiate(singlesaveprefab, v3, Quaternion.identity,parent.transform);
+        Instantiate(singlesaveprefab, v3, Quaternion.identity, parent.transform);
         //Debug.Log("オブジェクトを生成");
     }//足した部分
 
@@ -791,17 +790,5 @@ public class NewQuadScript : MonoBehaviour
     {
         targetGameObject.AddComponent<MeshFilter>();
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

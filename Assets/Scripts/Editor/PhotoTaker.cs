@@ -16,8 +16,5 @@ public class PhotoTaker : MonoBehaviour
     public void CapturePhoto()
     {
         GetComponent<ScreenCapture>().TakeScreenShotWithCamera();
-        /*photo = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
-        photoSOs[datanumber].SetScreenShot(photo);
-        datanumber++;*/
     }
 }

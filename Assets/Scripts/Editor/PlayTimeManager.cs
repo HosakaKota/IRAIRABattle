@@ -23,7 +23,7 @@ public class PlayTimeManager : MonoBehaviour
 
     bool winTheGame;
 
-   public GameObject[] hints;
+    public GameObject[] hints;
     bool CanJumpToMenu;
 
     SavePositions savePositions;
@@ -31,20 +31,18 @@ public class PlayTimeManager : MonoBehaviour
     {
         photoSO = FindObjectOfType<Always>().tempDataFromMenu;
         savePositions = FindObjectOfType<SavePositions>();
-        if (SceneManager.GetActiveScene().name=="play")
+        if (SceneManager.GetActiveScene().name == "play")
         {
-            if (photoSO.ID>99)
+            if (photoSO.ID > 99)
             {
                 savePositions.LoadNCMB("Demo", photoSO.ID);
             }
             else
             {
-                savePositions.LoadNCMB("Stage", photoSO.ID-1);
-            }       
+                savePositions.LoadNCMB("Stage", photoSO.ID - 1);
+            }
             text.gameObject.SetActive(true);
             text1.gameObject.SetActive(true);
-            // create collider
-            //CreateCollider();
         }
 
     }
@@ -59,8 +57,6 @@ public class PlayTimeManager : MonoBehaviour
 
     public void OnBeginPlay()
     {
-        //text.text = time.ToString();
-        //text1.text = time.ToString();
         StartCoroutine(RecordPlayTime());
     }
 
@@ -73,16 +69,16 @@ public class PlayTimeManager : MonoBehaviour
             text.text = time.ToString();
             text1.text = time.ToString();
         }
-        
+
     }
 
     public void OnEndPlay()
     {
         playing = false;
         StopCoroutine(RecordPlayTime());
-        if (SceneManager.GetActiveScene().name =="play")
+        if (SceneManager.GetActiveScene().name == "play")
         {
-            if (time<photoSO.ClearTime)
+            if (time < photoSO.ClearTime)
             {
                 winTheGame = true;
             }
@@ -94,7 +90,7 @@ public class PlayTimeManager : MonoBehaviour
         else
         {
             photoSO.ClearTime = time;
-            
+
         }
         ShowHints();
     }
@@ -108,8 +104,6 @@ public class PlayTimeManager : MonoBehaviour
             time += missTime;
             text.text = time.ToString();
             text1.text = time.ToString();
-            /*CheckPoints checker = FindObjectOfType<CheckPoints>();
-            checker.Check(checker.points);*/
             Transform parent = GameObject.Find("parent").transform;
             int childnumber = parent.childCount;
             GameObject g1 = parent.GetChild(childnumber - 1).gameObject;
@@ -118,9 +112,8 @@ public class PlayTimeManager : MonoBehaviour
             g1.GetComponent<MeshRenderer>().enabled = true;
             g1.GetComponent<MeshRenderer>().material.color = Color.red;
 
-            //StartCoroutine(ProtectTime(protectTime));
         }
-        
+
     }
 
     public void StartProtectingSystem(int number)
@@ -134,19 +127,9 @@ public class PlayTimeManager : MonoBehaviour
         non.Disabled_Collider();
         yield return new WaitForSeconds(2);
         non.Enabled_Collider();
-
-        /* while (time>=0)
-         {
-             OnMUTEKI();
-             yield return new WaitForSeconds(1);
-             time -= 1;
-         }
-         protectionFlag = false;
-         mesh.material = defualtColor;
-         OutMUTEKI();*/
     }
 
-    public void OnMUTEKI()            //無敵
+    public void OnInvinsible()            //無敵
     {
         CapsuleCollider[] colliders = FindObjectsOfType<CapsuleCollider>();
         List<CapsuleCollider> stickColliders = new();
@@ -163,7 +146,7 @@ public class PlayTimeManager : MonoBehaviour
         }
     }
 
-    public void OutMUTEKI()　　　　　//無敵じゃない
+    public void OutInvinsible()　　　　　//無敵じゃない
     {
         CapsuleCollider[] colliders = FindObjectsOfType<CapsuleCollider>();
         List<CapsuleCollider> stickColliders = new();

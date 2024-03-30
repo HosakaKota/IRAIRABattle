@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;  
+using UnityEngine.SceneManagement;
 
 public class EndObject : MonoBehaviour
 {
@@ -31,14 +31,10 @@ public class EndObject : MonoBehaviour
 
     public void Start()
     {
-       
-        timeManager = GameObject.FindObjectOfType<PlayTimeManager>();
-       // if (SceneManager.GetActiveScene().name !="play")
-       // {
-            playCountDown = GameObject.Find("---------------UIs---------------------------").transform.Find("PlayCountDown").gameObject;
-            playCountDown1 = GameObject.Find("---------------UIs---------------------------").transform.Find("PlayCountDown (1)").gameObject;
 
-       // }
+        timeManager = GameObject.FindObjectOfType<PlayTimeManager>();
+        playCountDown = GameObject.Find("---------------UIs---------------------------").transform.Find("PlayCountDown").gameObject;
+        playCountDown1 = GameObject.Find("---------------UIs---------------------------").transform.Find("PlayCountDown (1)").gameObject;
 
         EndEffect = GameObject.Find("---------------UIs---------------------------").transform.Find("EndEffect").gameObject;
         EndEffect1 = GameObject.Find("---------------UIs---------------------------").transform.Find("EndEffect1").gameObject;
@@ -60,7 +56,7 @@ public class EndObject : MonoBehaviour
 
     public bool CheckIfOkayToEnd()
     {
-      CheckPrefabs[] checkPrefabs = GameObject.Find("parent").GetComponentsInChildren<CheckPrefabs>();
+        CheckPrefabs[] checkPrefabs = GameObject.Find("parent").GetComponentsInChildren<CheckPrefabs>();
         int number = checkPrefabs.Length;
 
         int passTime = 0;
@@ -68,10 +64,10 @@ public class EndObject : MonoBehaviour
         {
             if (checkPrefabs[i].passed)
             {
-                passTime++; 
+                passTime++;
             }
         }
-        if (number==passTime)
+        if (number == passTime)
         {
             return true;
         }
@@ -83,7 +79,7 @@ public class EndObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Stick"&& timeManager.startedGame&& CheckIfOkayToEnd())
+        if (other.gameObject.tag == "Stick" && timeManager.startedGame && CheckIfOkayToEnd())
         {
             if (SceneManager.GetActiveScene().name == "myScene")
             {
@@ -111,14 +107,11 @@ public class EndObject : MonoBehaviour
         }
     }
 
-   public void End()
+    public void End()
     {
         timeManager.OnEndPlay();
-       // if (SceneManager.GetActiveScene().name != "play")
-       // {
-            playCountDown.SetActive(false);
-            playCountDown1.SetActive(false);
-      //  }
+        playCountDown.SetActive(false);
+        playCountDown1.SetActive(false);
         EndEffect.SetActive(true);
         EndEffect1.SetActive(true);
 
@@ -129,20 +122,12 @@ public class EndObject : MonoBehaviour
         texts1[1].text = timeManager.time.ToString();
         EndTextParents.SetActive(true);
         EndTextParents1.SetActive(true);
-        //show the data int here by UI;
-        // }
-        //  else
-        //  {
-        //      timeManager.Win();
-        //   }
 
-        //mesh.GetComponent<MeshRenderer>().enabled = false;
-        //mesh.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshCollider>().enabled = false;
         if (SceneManager.GetActiveScene().name != "play")
         {
             ShowIDAfterCreateStage();
         }
-        //FindObjectOfType<CollisionTest>().enabled = false;
+
         mesh.SetActive(false);
         GameObject.Find("Stick (1)").SetActive(false);
         Destroy(gameObject);
@@ -222,23 +207,23 @@ public class EndObject : MonoBehaviour
         SavePositions save = FindObjectOfType<SavePositions>();
         if (save.saveFlag)
         {
-            int number = FindObjectOfType<SavePositions>().StageID+1;//-2
+            int number = FindObjectOfType<SavePositions>().StageID + 1;//-2
             texts[1].text = "Stage: " + number.ToString();
             texts1[1].text = "Stage: " + number.ToString();
         }
         else
         {
-            int number = FindObjectOfType<SavePositions>().StageIDStand+1;
+            int number = FindObjectOfType<SavePositions>().StageIDStand + 1;
             texts[1].text = "Stage: " + number.ToString();
             texts1[1].text = "Stage: " + number.ToString();
         }
-        
-        
+
+
 
         saveDataID.SetActive(true);
         saveDataID1.SetActive(true);
     }
 
 
-  
+
 }
