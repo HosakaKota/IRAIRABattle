@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -102,8 +102,8 @@ public class PlayListManager : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.RawButton.A))
         {
             //NewQuadScript.testStage = true;
-            Debug.Log(number + 4 * page - 2 + "-------------------" + FindObjectOfType<SavePositions>().matubi);
-            if (number+4*page-2<FindObjectOfType<SavePositions>().matubi|| number + 4 * page - 2==0)  //  0  2
+            Debug.Log(number + 4 * page - 2 + "-------------------" + FindObjectOfType<SavePositions>().StageID);
+            if (number+4*page-2<FindObjectOfType<SavePositions>().StageID|| number + 4 * page - 2==0)  //  0  2
             {
                 SceneManager.LoadScene("play");
                 FindObjectOfType<Always>().tempDataFromMenu = transform.GetChild(number+page*4+1).GetComponent<PlayListContent>().stageData;

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,7 +56,7 @@ public class MenuManager : MonoBehaviour
                 case 0:
                     SceneManager.LoadScene("myScene");
                     Always always = FindObjectOfType<Always>();
-                    always.tempDataFromMenu =  always.photoSOs[FindObjectOfType<SavePositions>().matubi];
+                    always.tempDataFromMenu =  always.photoSOs[FindObjectOfType<SavePositions>().StageID];
 
                     break;
                 case 1:

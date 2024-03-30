@@ -15,7 +15,7 @@ C:/Users/himak/TPU_GAME/VRTEST2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55322
+59618
 Successfully changed project path to: C:/Users/himak/TPU_GAME/VRTEST2
 C:/Users/himak/TPU_GAME/VRTEST2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,8 +47,8 @@ C:/Users/himak/TPU_GAME/VRTEST2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 191.67 ms, found 29 plugins.
-Preloading 1 native plugins for Editor in 0.97 ms.
+Refreshing native plugins compatible for Editor in 164.00 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.74 ms.
 Initialize engine version: 2021.3.3f1 (af2e63e8f9bd)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/himak/TPU_GAME/VRTEST2/Assets
@@ -67,54 +67,54 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006653 seconds.
+Registered in 0.006391 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 108.36 ms, found 29 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
+Refreshing native plugins compatible for Editor in 104.72 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
+- Completed reload, in  0.604 seconds
 Domain Reload Profiling:
-	ReloadAssembly (601ms)
-		BeginReloadAssembly (83ms)
+	ReloadAssembly (604ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (423ms)
-			LoadAssemblies (83ms)
+		EndReloadAssembly (422ms)
+			LoadAssemblies (94ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (86ms)
+			SetupTypeCache (81ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (272ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (274ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (49ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (109ms)
+				InitializePlatformSupportModulesInManaged (50ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (105ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (77ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
+				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.021961 seconds.
+Registered in 0.015811 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 29 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 1.48 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Package Manager log level set to [2]
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
@@ -122,33 +122,33 @@ Package Manager log level set to [2]
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.73.0
 Mono: successfully reloaded assembly
-- Completed reload, in  1.214 seconds
+- Completed reload, in  1.331 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1215ms)
-		BeginReloadAssembly (230ms)
+	ReloadAssembly (1332ms)
+		BeginReloadAssembly (227ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (129ms)
-		EndReloadAssembly (892ms)
-			LoadAssemblies (122ms)
+			CreateAndSetChildDomain (128ms)
+		EndReloadAssembly (1010ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (237ms)
+			SetupTypeCache (349ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (441ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (440ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (302ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (297ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -157,12 +157,12 @@ Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
 Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.37 ms, found 29 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Unloading 5312 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 97 unused Assets / (2.2 MB). Loaded Objects now: 5753.
-Memory consumption went from 328.3 MB to 326.1 MB.
-Total: 10.697100 ms (FindLiveObjects: 0.688100 ms CreateObjectMapping: 0.581400 ms MarkObjects: 5.786300 ms  DeleteObjects: 3.638800 ms)
+Refreshing native plugins compatible for Editor in 1.29 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 5300 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 95 unused Assets / (2.1 MB). Loaded Objects now: 5743.
+Memory consumption went from 327.7 MB to 325.5 MB.
+Total: 4.465800 ms (FindLiveObjects: 0.478700 ms CreateObjectMapping: 0.248700 ms MarkObjects: 3.046700 ms  DeleteObjects: 0.690800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -177,169 +177,835 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 263658.093523 seconds.
-  path: Assets/Scripts/Editor/StartObject.cs
-  artifactKey: Guid(fe8630840d42d9d48bd26b177ca464a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/StartObject.cs using Guid(fe8630840d42d9d48bd26b177ca464a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc23beb6b09953b3e72c1b17cb482fcc') in 0.035816 seconds 
+  Time since last request: 1194721.068448 seconds.
+  path: Assets/Scripts/Editor/createStage/Pause.cs
+  artifactKey: Guid(848d8863863cc1f4ea690927ff14f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/Pause.cs using Guid(848d8863863cc1f4ea690927ff14f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb1b2a986fac286fe74ad684fef2f636') in 0.030778 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.348382 seconds.
-  path: Assets/Scripts/Editor/LineDrawer.cs
-  artifactKey: Guid(2eb319e4ad4a4654fa7ab6950114e7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/LineDrawer.cs using Guid(2eb319e4ad4a4654fa7ab6950114e7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f69586cf9dc521951f772f2992e8a6') in 0.005027 seconds 
+  Time since last request: 58.045627 seconds.
+  path: Assets/Scripts/Editor/createStage/EightScript.cs
+  artifactKey: Guid(c3a72f23f0805a44797435bcdcbf4a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/EightScript.cs using Guid(c3a72f23f0805a44797435bcdcbf4a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b24dcd0de7fc1d76c21d2f12d1c48e') in 0.005009 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 1.372658 seconds.
-  path: Assets/Scripts/Editor/EndObject.cs
-  artifactKey: Guid(0adb2602993079a48a8bb7fd863364c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/EndObject.cs using Guid(0adb2602993079a48a8bb7fd863364c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10235ee694758b26aec30b329c38edf') in 0.004131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.711804 seconds.
-  path: Assets/Scripts/Editor/DrawTest_V2.cs
-  artifactKey: Guid(bc2a26ba2dab41f4dab8a707edec4cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/DrawTest_V2.cs using Guid(bc2a26ba2dab41f4dab8a707edec4cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366f8c4abb649ccd973437b327c8a696') in 0.002934 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.966858 seconds.
-  path: Assets/Scripts/Editor/CollisionTest.cs
-  artifactKey: Guid(457937e8c42248c42b09c8deb504d07a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Editor/CollisionTest.cs using Guid(457937e8c42248c42b09c8deb504d07a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ea7ca7b898befa8e37399189648396') in 0.006483 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 328.492442 seconds.
-  path: Assets/Scenes/Title.unity
-  artifactKey: Guid(8392bb933051d05449008457e5b366f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Title.unity using Guid(8392bb933051d05449008457e5b366f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2a3edaef8360949c994d93f0f60e51') in 0.006260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 667.413273 seconds.
-  path: Assets/Scenes/play.unity
-  artifactKey: Guid(4cf57d46485a4b24ca94550d5dbf4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/play.unity using Guid(4cf57d46485a4b24ca94550d5dbf4e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325fa6d07b67c6e7d31b56dc70315e7b') in 0.010639 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 98.849867 seconds.
-  path: Assets/Texcures/Stage5.png
-  artifactKey: Guid(45a2454ee0f68df468b113e6ed92f1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Texcures/Stage5.png using Guid(45a2454ee0f68df468b113e6ed92f1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc30cee69f3184ff6b81a658374b74ea') in 0.058195 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.174591 seconds.
-  path: Assets/Bakery/BakeryMetaPass.cginc
-  artifactKey: Guid(1d6fa63b3a54ade469dc0fa038f0c81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bakery/BakeryMetaPass.cginc using Guid(1d6fa63b3a54ade469dc0fa038f0c81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936e0279890491082d77c6b2e7d6f12d') in 0.011316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.011081 seconds.
-  path: Assets/Bakery/emptyLightingData.asset
-  artifactKey: Guid(8b4edc58204bf354c9dd12ceacc42350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bakery/emptyLightingData.asset using Guid(8b4edc58204bf354c9dd12ceacc42350) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Lighting data asset ‘emptyLightingData’ is incompatible with the current Unity version. Please use Generate Lighting to rebuild the lighting data. Realtime Global Illumination cannot be used until the lighting data is rebuilt.
-0x00007ff63695e10d (Unity) StackWalker::GetCurrentCallstack
-0x00007ff636964e69 (Unity) StackWalker::ShowCallstack
-0x00007ff6378d09d3 (Unity) GetStacktrace
-0x00007ff637f627dd (Unity) DebugStringToFile
-0x00007ff637a1c142 (Unity) LightingDataAsset::CheckConsistency
-0x00007ff636938219 (Unity) AwakeFromLoadQueue::InvokePersistentManagerAwake
-0x00007ff636938fdc (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
-0x00007ff636939143 (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
-0x00007ff63690b902 (Unity) PersistentManager::IntegrateAllThreadedObjects
-0x00007ff63690c390 (Unity) PersistentManager::LoadAndIntegrateAllPreallocatedObjects
-0x00007ff6369102e2 (Unity) PersistentManager::ReadObject
-0x00007ff637bb3ac1 (Unity) WritePreviews
-0x00007ff637babef5 (Unity) PreviewImporter::GenerateAssetData
-0x00007ff637bf1dbe (Unity) ImportToObjects
-0x00007ff637bf0d23 (Unity) ImportAsset
-0x00007ff637c136d2 (Unity) AssetImportWorker::Import
-0x00007ff637c789a4 (Unity) <lambda_28a9dd63239995ea16631cf66756f7a6>::operator()
-0x00007ff637cb9c22 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
-0x00007ff637ca620e (Unity) asio::detail::win_iocp_io_context::do_one
-0x00007ff637ca7f04 (Unity) asio::detail::win_iocp_io_context::run
-0x00007ff637cb829e (Unity) IOService::Run
-0x00007ff637c8b32f (Unity) AssetImportWorkerClient::Run
-0x00007ff637c55bf3 (Unity) RunAssetImportWorkerClientV2
-0x00007ff637c55c7b (Unity) RunAssetImporterV2
-0x00007ff63747fb94 (Unity) Application::InitializeProject
-0x00007ff6378db118 (Unity) WinMain
-0x00007ff638c0ab6e (Unity) __scrt_common_main_seh
-0x00007fffff8e257d (KERNEL32) BaseThreadInitThunk
-0x00007ff801c0aa58 (ntdll) RtlUserThreadStart
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023829 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.058 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1059ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (798ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (356ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 14.57 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5747.
+Memory consumption went from 304.2 MB to 302.0 MB.
+Total: 3.710900 ms (FindLiveObjects: 0.453000 ms CreateObjectMapping: 0.237300 ms MarkObjects: 2.468000 ms  DeleteObjects: 0.551300 ms)
 
-Lighting data asset ‘emptyLightingData’ is incompatible with the current Unity version because the scene it was baked for was not serialized. Please use Generate Lighting to rebuild the lighting data, or assign the target scene to the Lighting Data Asset in the inspector.
-0x00007ff63695e10d (Unity) StackWalker::GetCurrentCallstack
-0x00007ff636964e69 (Unity) StackWalker::ShowCallstack
-0x00007ff6378d09d3 (Unity) GetStacktrace
-0x00007ff637f627dd (Unity) DebugStringToFile
-0x00007ff637a1c334 (Unity) LightingDataAsset::CheckConsistency
-0x00007ff636938219 (Unity) AwakeFromLoadQueue::InvokePersistentManagerAwake
-0x00007ff636938fdc (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
-0x00007ff636939143 (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
-0x00007ff63690b902 (Unity) PersistentManager::IntegrateAllThreadedObjects
-0x00007ff63690c390 (Unity) PersistentManager::LoadAndIntegrateAllPreallocatedObjects
-0x00007ff6369102e2 (Unity) PersistentManager::ReadObject
-0x00007ff637bb3ac1 (Unity) WritePreviews
-0x00007ff637babef5 (Unity) PreviewImporter::GenerateAssetData
-0x00007ff637bf1dbe (Unity) ImportToObjects
-0x00007ff637bf0d23 (Unity) ImportAsset
-0x00007ff637c136d2 (Unity) AssetImportWorker::Import
-0x00007ff637c789a4 (Unity) <lambda_28a9dd63239995ea16631cf66756f7a6>::operator()
-0x00007ff637cb9c22 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
-0x00007ff637ca620e (Unity) asio::detail::win_iocp_io_context::do_one
-0x00007ff637ca7f04 (Unity) asio::detail::win_iocp_io_context::run
-0x00007ff637cb829e (Unity) IOService::Run
-0x00007ff637c8b32f (Unity) AssetImportWorkerClient::Run
-0x00007ff637c55bf3 (Unity) RunAssetImportWorkerClientV2
-0x00007ff637c55c7b (Unity) RunAssetImporterV2
-0x00007ff63747fb94 (Unity) Application::InitializeProject
-0x00007ff6378db118 (Unity) WinMain
-0x00007ff638c0ab6e (Unity) __scrt_common_main_seh
-0x00007fffff8e257d (KERNEL32) BaseThreadInitThunk
-0x00007ff801c0aa58 (ntdll) RtlUserThreadStart
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13.127204 seconds.
+  path: Assets/Scripts/Editor/createStage/DemoTest.cs
+  artifactKey: Guid(d007e5615bfd68448820389ad05e2606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/DemoTest.cs using Guid(d007e5615bfd68448820389ad05e2606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12716ab41a965919905f91c93cd1f3fa') in 0.023191 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019909 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.924 seconds
+Domain Reload Profiling:
+	ReloadAssembly (924ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (717ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (214ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (332ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 12.32 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5751.
+Memory consumption went from 304.2 MB to 302.1 MB.
+Total: 3.342200 ms (FindLiveObjects: 0.359000 ms CreateObjectMapping: 0.196000 ms MarkObjects: 2.277200 ms  DeleteObjects: 0.508900 ms)
 
- -> (artifact id: '406240b88e2cee7b28dd57b66e139132') in 0.471351 seconds 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.327761 seconds.
-  path: Assets/Bakery/ftUnitySpotTexture.bmp
-  artifactKey: Guid(3a66602b8cc7fdd4ab57d07b4176432b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bakery/ftUnitySpotTexture.bmp using Guid(3a66602b8cc7fdd4ab57d07b4176432b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '268e19c7ab448c6dbbf6f08d77e82534') in 0.016110 seconds 
+  Time since last request: 6.611611 seconds.
+  path: Assets/Scripts/Editor/createStage/CreateTorus.cs
+  artifactKey: Guid(36c10d1c45ecf534f98ea4e135575c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/CreateTorus.cs using Guid(36c10d1c45ecf534f98ea4e135575c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1399b0308620a330c602d18a3960e8') in 0.011728 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018388 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.912 seconds
+Domain Reload Profiling:
+	ReloadAssembly (913ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (693ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (221ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 18.30 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5755.
+Memory consumption went from 304.2 MB to 302.1 MB.
+Total: 3.559400 ms (FindLiveObjects: 0.386500 ms CreateObjectMapping: 0.225500 ms MarkObjects: 2.403700 ms  DeleteObjects: 0.542400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.816541 seconds.
-  path: Assets/BakeryLightmaps/Title_LM0_final.hdr
-  artifactKey: Guid(743b0c553477a8d4ab8d83d60e023cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BakeryLightmaps/Title_LM0_final.hdr using Guid(743b0c553477a8d4ab8d83d60e023cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a6d1cec0886fcf0bd593b40487b980') in 0.048342 seconds 
+  Time since last request: 6.211111 seconds.
+  path: Assets/Scripts/Editor/createStage/CheckPrefabs.cs
+  artifactKey: Guid(d16e88abcd655034e98ed40c1ff375d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/CheckPrefabs.cs using Guid(d16e88abcd655034e98ed40c1ff375d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2fe7ffdb08ed22a950064187e48db0') in 0.011564 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/BakeryLightmaps/Title_LMA8_final.hdr
-  artifactKey: Guid(58a316c05fad4a04a849b14b99e82596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BakeryLightmaps/Title_LMA8_final.hdr using Guid(58a316c05fad4a04a849b14b99e82596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9893cb252ab71fa9408fe1b984e477b0') in 0.019416 seconds 
+  Time since last request: 0.670401 seconds.
+  path: Assets/Scripts/Editor/createStage/CheckPrefabs.cs
+  artifactKey: Guid(d16e88abcd655034e98ed40c1ff375d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/CheckPrefabs.cs using Guid(d16e88abcd655034e98ed40c1ff375d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7e75a7b97d4f9653242c5ab909bcb0') in 0.004616 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018396 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Domain Reload Profiling:
+	ReloadAssembly (908ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (704ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (212ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 12.90 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5759.
+Memory consumption went from 304.2 MB to 302.1 MB.
+Total: 4.012300 ms (FindLiveObjects: 0.414900 ms CreateObjectMapping: 0.244700 ms MarkObjects: 2.706800 ms  DeleteObjects: 0.644600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/BakeryLightmaps/Title_LMA3_final.hdr
-  artifactKey: Guid(2798d9474f2f49c4f8149634287eb66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BakeryLightmaps/Title_LMA3_final.hdr using Guid(2798d9474f2f49c4f8149634287eb66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa078284867a8e70a8d1b395bfb47f2a') in 0.017650 seconds 
+  Time since last request: 7.218599 seconds.
+  path: Assets/Scripts/Editor/createStage/CheckPoints.cs
+  artifactKey: Guid(61cc2f24f67fa3342a665fb779f5317f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/CheckPoints.cs using Guid(61cc2f24f67fa3342a665fb779f5317f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35ece01dadb486f098fae171edc0b06') in 0.013415 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017937 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Domain Reload Profiling:
+	ReloadAssembly (905ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (698ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (216ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 12.77 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5763.
+Memory consumption went from 304.3 MB to 302.1 MB.
+Total: 3.716500 ms (FindLiveObjects: 0.342300 ms CreateObjectMapping: 0.186000 ms MarkObjects: 2.653100 ms  DeleteObjects: 0.534300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/BakeryLightmaps/Title_LMA6_final.hdr
-  artifactKey: Guid(1d9fc1f1c99996140b451bfd36e6eff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BakeryLightmaps/Title_LMA6_final.hdr using Guid(1d9fc1f1c99996140b451bfd36e6eff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700184dcf1def6e2026665382685a092') in 0.016834 seconds 
+  Time since last request: 13.307249 seconds.
+  path: Assets/Scripts/Editor/createStage/BoxMove.cs
+  artifactKey: Guid(f133bf82fd339cc42aadd1ce615d5b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/BoxMove.cs using Guid(f133bf82fd339cc42aadd1ce615d5b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf3e2def1ee764690f8463b17a68b18') in 0.021568 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018225 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.934 seconds
+Domain Reload Profiling:
+	ReloadAssembly (934ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (725ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (349ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 11.43 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5767.
+Memory consumption went from 304.3 MB to 302.1 MB.
+Total: 4.335300 ms (FindLiveObjects: 0.394300 ms CreateObjectMapping: 0.263700 ms MarkObjects: 3.088700 ms  DeleteObjects: 0.587200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/BakeryLightmaps/Title_LMA2_final.hdr
-  artifactKey: Guid(b6ebb7edade400446b8cc8c15d77aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BakeryLightmaps/Title_LMA2_final.hdr using Guid(b6ebb7edade400446b8cc8c15d77aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29834627415bbaf722d6eb8809a52585') in 0.016218 seconds 
+  Time since last request: 32.092583 seconds.
+  path: Assets/Scripts/Editor/createStage/BoxMove.cs
+  artifactKey: Guid(f133bf82fd339cc42aadd1ce615d5b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/BoxMove.cs using Guid(f133bf82fd339cc42aadd1ce615d5b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bec187ca5cbf372f94b202401e4e7d') in 0.020567 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018952 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Domain Reload Profiling:
+	ReloadAssembly (885ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (684ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (208ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 11.98 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5771.
+Memory consumption went from 304.4 MB to 302.3 MB.
+Total: 3.816500 ms (FindLiveObjects: 0.336600 ms CreateObjectMapping: 0.177800 ms MarkObjects: 2.805700 ms  DeleteObjects: 0.495500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 59.229616 seconds.
-  path: Assets/prefabs/Light.fbx
-  artifactKey: Guid(61ac3754e108a3b4eac43f05055751f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabs/Light.fbx using Guid(61ac3754e108a3b4eac43f05055751f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbbba9ebaf7cf2513e064a921e98f20') in 0.153919 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 1652.227452 seconds.
+  path: Assets/Scripts/Editor/createStage/SavePositions.cs
+  artifactKey: Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/SavePositions.cs using Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f67027a912deb488b4861daa5e97949') in 0.016831 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017835 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.979 seconds
+Domain Reload Profiling:
+	ReloadAssembly (979ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (760ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (262ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 12.10 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5775.
+Memory consumption went from 304.4 MB to 302.3 MB.
+Total: 4.621400 ms (FindLiveObjects: 0.404300 ms CreateObjectMapping: 0.354200 ms MarkObjects: 3.123300 ms  DeleteObjects: 0.738100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 20.608288 seconds.
+  path: Assets/Scripts/Editor/createStage/SavePositions.cs
+  artifactKey: Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/SavePositions.cs using Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20fc45180e00cdd14fe7d074717c93e') in 0.010525 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018247 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Domain Reload Profiling:
+	ReloadAssembly (889ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (689ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (320ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 12.29 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5779.
+Memory consumption went from 304.4 MB to 302.3 MB.
+Total: 4.664200 ms (FindLiveObjects: 0.464600 ms CreateObjectMapping: 0.256700 ms MarkObjects: 3.172000 ms  DeleteObjects: 0.769600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 877.194086 seconds.
+  path: Assets/Scripts/Editor/createStage/SavePositions.cs
+  artifactKey: Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/SavePositions.cs using Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20aa4b9abe207b208a5481c58cf5b351') in 0.017058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.183941 seconds.
+  path: Assets/Scripts/Editor/createStage/SavePositions.cs
+  artifactKey: Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/SavePositions.cs using Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c64b03eff5dad81d07fb67ae1af2c8d') in 0.002507 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018242 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.90 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.020 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1020ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (743ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 14.44 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5783.
+Memory consumption went from 304.4 MB to 302.3 MB.
+Total: 4.049600 ms (FindLiveObjects: 0.405500 ms CreateObjectMapping: 0.245200 ms MarkObjects: 2.751400 ms  DeleteObjects: 0.646100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12.386597 seconds.
+  path: Assets/Scripts/Editor/createStage/SavePositions.cs
+  artifactKey: Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/SavePositions.cs using Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef4391b890a7c060e7ea403447fd8dd') in 0.022430 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017852 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.003 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1003ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (801ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (362ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 14.29 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5787.
+Memory consumption went from 304.4 MB to 302.3 MB.
+Total: 5.838300 ms (FindLiveObjects: 0.655300 ms CreateObjectMapping: 0.567400 ms MarkObjects: 3.869100 ms  DeleteObjects: 0.744900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 750.056211 seconds.
+  path: Assets/Scripts/Editor/createStage/SavePositions.cs
+  artifactKey: Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Editor/createStage/SavePositions.cs using Guid(3aa2d95473911e8468705bca39583567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8257ef22027b853f616f04382044cdb9') in 0.015534 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017366 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\himak\TPU_GAME\VRTEST2\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Domain Reload Profiling:
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (720ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (225ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (324ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water': fallback shader 'Transparent' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Mobile Water (Depth)': fallback shader 'Transparent' not found
+Shader 'PIDI Shaders Collection/Planar Reflections 4/Water Shaders/Advanced (Tessellation)': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 11.98 ms, found 29 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 88 unused Assets / (2.1 MB). Loaded Objects now: 5791.
+Memory consumption went from 304.4 MB to 302.3 MB.
+Total: 4.650400 ms (FindLiveObjects: 0.514900 ms CreateObjectMapping: 0.489500 ms MarkObjects: 2.982200 ms  DeleteObjects: 0.662900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -1,13 +1,13 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
 	[SerializeField]
-	//@ƒ|[ƒY‚µ‚½‚É•\¦‚·‚éUI‚ÌƒvƒŒƒnƒu
+	//ã€€ãƒãƒ¼ã‚ºã—ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹UIã®ãƒ—ãƒ¬ãƒãƒ–
 	private GameObject pauseUIPrefab;
-	//@ƒ|[ƒYUI‚ÌƒCƒ“ƒXƒ^ƒ“ƒX
+	//ã€€ãƒãƒ¼ã‚ºUIã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	private GameObject pauseUIInstance;
 
 	public bool PauseFlag = true;

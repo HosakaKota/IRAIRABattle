@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -88,22 +88,22 @@ public class EndObject : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "myScene")
             {
                 SavePositions save = FindObjectOfType<SavePositions>();
-                stageName = save.defaultserch + save.matubi.ToString("D3");
+                stageName = save.defaultserch + save.StageID.ToString("D3");
                 if (save.saveFlag)
                 {
                     save.NewSaveNCMB(stageName, save.Vec3ToFloat(save.vec3pos));
                     //save.NewSaveNCMB("Demo101", save.Vec3ToFloat(save.vec3pos));
                     Always always = FindObjectOfType<Always>();
-                    always.tempDataFromMenu = always.photoSOs[save.matubi];
-                    always.tempDataFromMenu.ID = save.matubi;
+                    always.tempDataFromMenu = always.photoSOs[save.StageID];
+                    always.tempDataFromMenu.ID = save.StageID;
                     //save.matubi++;
                 }
                 else
                 {
                     save.OverSaveNCMB(save.saveID, save.Vec3ToFloat(save.vec3pos));
                     Always always = FindObjectOfType<Always>();
-                    always.tempDataFromMenu = always.photoSOs[save.matubiStand];
-                    always.tempDataFromMenu.ID = save.matubiStand;
+                    always.tempDataFromMenu = always.photoSOs[save.StageIDStand];
+                    always.tempDataFromMenu.ID = save.StageIDStand;
                     //save.matubi++;
                 }
             }
@@ -222,13 +222,13 @@ public class EndObject : MonoBehaviour
         SavePositions save = FindObjectOfType<SavePositions>();
         if (save.saveFlag)
         {
-            int number = FindObjectOfType<SavePositions>().matubi+1;//-2
+            int number = FindObjectOfType<SavePositions>().StageID+1;//-2
             texts[1].text = "Stage: " + number.ToString();
             texts1[1].text = "Stage: " + number.ToString();
         }
         else
         {
-            int number = FindObjectOfType<SavePositions>().matubiStand+1;
+            int number = FindObjectOfType<SavePositions>().StageIDStand+1;
             texts[1].text = "Stage: " + number.ToString();
             texts1[1].text = "Stage: " + number.ToString();
         }

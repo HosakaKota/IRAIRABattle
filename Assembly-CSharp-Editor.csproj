@@ -93,7 +93,6 @@
     <Compile Include="Assets\VolumetricFog\Extra\DynamicFog\Editor\DynamicFogExclusiveEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\PostProcessingBehaviourEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\createStage\CheckPoints.cs" />
-    <Compile Include="Assets\NCMB\PlayModeTest\Editor\SimpleJSONBinary.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\EyeAdaptationModelEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\CheckIsMoved.cs" />
     <Compile Include="Assets\Scripts\Editor\SAColliderBoxReducer.cs" />
@@ -148,7 +147,6 @@
     <Compile Include="Assets\Scripts\Editor\NewLineDrawer.cs" />
     <Compile Include="Assets\VolumetricFog\Extra\DynamicFog\Editor\DynamicFogEditor.cs" />
     <Compile Include="Assets\VolumetricFog\Editor\FogOfWarHoleEditor.cs" />
-    <Compile Include="Assets\NCMB\PlayModeTest\Editor\UpdateXcodeProject.cs" />
     <Compile Include="Assets\PostProcessing\Editor\PostProcessingFactory.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
     <Compile Include="Assets\Scripts\Editor\GameEnd.cs" />
@@ -157,17 +155,13 @@
     <Compile Include="Assets\VLights\Editor\VolumeLightManagerEditor.cs" />
     <Compile Include="Assets\VolumetricFog\Extra\DynamicFog\Editor\DynamicFogOfWarHoleEditor.cs" />
     <Compile Include="Assets\PIDI Game Development Framework\Planar Reflections 4\Source Code\Editor\PlanarReflectionCaster_Editor.cs" />
-    <Compile Include="Assets\NCMB\PlayModeTest\Editor\NCMBMenu.cs" />
     <Compile Include="Assets\Scripts\Editor\SABoneColliderBuilderInspector.cs" />
     <Compile Include="Assets\Scripts\Editor\createStage\Pause.cs" />
     <Compile Include="Assets\Scripts\Editor\createStage\DemoTest.cs" />
     <Compile Include="Assets\Scripts\Editor\SAMeshColliderBuilder.cs" />
-    <Compile Include="Assets\NCMB\PlayModeTest\Editor\SimpleJSONUnity.cs" />
-    <Compile Include="Assets\NCMB\PlayModeTest\Editor\PreBuildAndroid.cs" />
     <Compile Include="Assets\Scripts\Editor\EyeFollowing.cs" />
     <Compile Include="Assets\Scripts\Editor\Counter.cs" />
     <Compile Include="Assets\Scripts\Editor\SAColliderBuilderEditorCommon.cs" />
-    <Compile Include="Assets\NCMB\PlayModeTest\Editor\SimpleJSON.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\MediaPlayerImageEditor.cs" />
     <Compile Include="Assets\PIDI Game Development Framework\Planar Reflections 4\Source Code\Editor\PlanarAPI.cs" />
