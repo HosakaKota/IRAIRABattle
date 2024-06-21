@@ -17,8 +17,7 @@ using UnityEditor.SceneManagement;
 [System.Serializable]
 public class Wrapper
 {
-    //public string name;
-    //public string path;
+    //クラス単位で保存されるためクラス作成
     public List<Vector3> pos;    
 }
 
@@ -29,7 +28,6 @@ public class SavePositions : MonoBehaviour
     public NewQuadScript NQs;
 
     public List<Vector3> vec3pos = new List<Vector3>();
-    public List<double> dblpos = new List<double>();
     public Vector3 pre_ncmb = new Vector3(1000, 1000, 1000);
     public int stage_num = 30;  //ステージ数上限
     public int demo_num = 2;  //デモステージ数上限
@@ -69,7 +67,6 @@ public class SavePositions : MonoBehaviour
                     //Debug.Log("--------StagesCount = " + count);
                     //Debug.Log("savename = " + savename);
                     saveFlag = true;
-                    //Debug.Log("1--------------------------------------------------------------------------" + saveFlag);
                 }
                 else
                 {
@@ -85,6 +82,7 @@ public class SavePositions : MonoBehaviour
 
     void Update()
     {
+        //動かしていない時の座標を取得しないように
         if (SceneManager.GetActiveScene().name!="Title"&&!EndDrawing&&SceneManager.GetActiveScene().name!= "play")
         {
             NQs = FindObjectOfType<NewQuadScript>();
@@ -108,6 +106,7 @@ public class SavePositions : MonoBehaviour
 
     public static List<Vector3> DoubleArrayListToVector3(ArrayList value)
     {
+        //NCMBにfloat型を保存するとdouble型になってしまうため読み込み時に変える
         float vf0;
         float vf1;
         float vf2;
@@ -145,12 +144,12 @@ public class SavePositions : MonoBehaviour
             if (e != null)
             {
                 // 失敗
-                Debug.Log("newsave error");
+                //Debug.Log("newsave error");
             }
             else
             {
                 //成功
-                Debug.Log("newsave success");
+                //Debug.Log("newsave success");
             }
         });
     }
@@ -158,7 +157,6 @@ public class SavePositions : MonoBehaviour
     public void OverSaveNCMB(string stageID, List<float> fp)
     {
         ArrayList al = new ArrayList();
-        double[] dl = new double[al.Count];
         NCMBObject ncmb_pos = new NCMBObject("Stages");
         ncmb_pos.ObjectId = stageID;
         ncmb_pos["vec3List"] = fp;
@@ -167,25 +165,22 @@ public class SavePositions : MonoBehaviour
             if (e != null)
             {
                 // 失敗
-                Debug.Log("oversave error");
+                //Debug.Log("oversave error");
             }
             else
             {
                 // 成功
-                Debug.Log("oversave success");
+                //Debug.Log("oversave success");
             }
         });
     }
 
-    public void LoadNCMB(string D_or_S, int num)
+    public void LoadNCMB(string ver, int num)
     {
-        //Debug.Log("------------num" + num);
         NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>("Stages");
 
-        //Hashtable where = new Hashtable();
-        string version = D_or_S;
+        string version = ver;
         string str = version + num.ToString("D3");
-        //where.Add("$regex", str);
         query.WhereEqualTo("StageName", str);
         query.OrderByDescending("StageName");
 
@@ -196,22 +191,23 @@ public class SavePositions : MonoBehaviour
             if (e != null)
             {
                 // 失敗
-                Debug.Log("download error");
+                //Debug.Log("download error");
             }
             else
             {
                 //成功
-                ArrayList al = objList[0]["vec3List"] as ArrayList;//(ArrayList)objList[0]["vec3List"];
+                ArrayList al = objList[0]["vec3List"] as ArrayList;
                 NQs = FindObjectOfType<NewQuadScript>();
                 NQs.LoadStage(DoubleArrayListToVector3(al));
-                Debug.Log("download success");
+                //Debug.Log("download success");
             }
         });
     }
 
     
-    public void RefreshOnlineMatubi()
+    public void RefreshOnlineStageID()
     {
+        //続けて遊ぶ時に保存先を再検索
         NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>("Stages");
         Hashtable where = new Hashtable();
         string str = "Stage...";
@@ -222,8 +218,8 @@ public class SavePositions : MonoBehaviour
         {
             if (e != null)
             {
-                // 幐攕
-                Debug.Log("saveserch error");
+                //失敗
+                //Debug.Log("serch error");
             }
             else
             {

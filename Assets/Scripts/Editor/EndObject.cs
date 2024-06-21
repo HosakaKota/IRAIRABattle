@@ -88,11 +88,9 @@ public class EndObject : MonoBehaviour
                 if (save.saveFlag)
                 {
                     save.NewSaveNCMB(stageName, save.Vec3ToFloat(save.vec3pos));
-                    //save.NewSaveNCMB("Demo101", save.Vec3ToFloat(save.vec3pos));
                     Always always = FindObjectOfType<Always>();
                     always.tempDataFromMenu = always.photoSOs[save.StageID];
                     always.tempDataFromMenu.ID = save.StageID;
-                    //save.matubi++;
                 }
                 else
                 {
@@ -100,7 +98,6 @@ public class EndObject : MonoBehaviour
                     Always always = FindObjectOfType<Always>();
                     always.tempDataFromMenu = always.photoSOs[save.StageIDStand];
                     always.tempDataFromMenu.ID = save.StageIDStand;
-                    //save.matubi++;
                 }
             }
             End();

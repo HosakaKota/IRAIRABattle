@@ -44,7 +44,6 @@ public class CheckPoints : MonoBehaviour
 
     public void Check(GameObject[] g)//この関数の引数は上にあるGameObject型の配列pointsで
     {
-        //Vector3 v3 = g[0].transform.position;//最初はスタート地点に戻す
         for (int i = g.Length - 1; i > 0; i--)//ゴールに近い中間点からtrueの確認
         {
             if (saves[i])

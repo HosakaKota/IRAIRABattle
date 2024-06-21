@@ -206,7 +206,7 @@ public class PlayTimeManager : MonoBehaviour
 
                 SceneManager.LoadScene(0);
                 CanJumpToMenu = false;
-                savePositions.RefreshOnlineMatubi();
+                savePositions.RefreshOnlineStageID();
             }
         }
 

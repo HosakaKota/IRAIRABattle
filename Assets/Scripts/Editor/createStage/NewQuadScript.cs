@@ -28,13 +28,6 @@ public class NewQuadScript : MonoBehaviour
     public Vector3 ncmbs = new Vector3(100, 100, 100);
 
 
-    private void Awake()
-    {
-        //保存先の計算
-        defaultpath = Application.dataPath;
-    }
-
-
     //public GameObject test1;
 
     float xoffset = 0;
@@ -565,7 +558,7 @@ public class NewQuadScript : MonoBehaviour
         {
             if (i == 0)
             {
-                tp = v3[0];//vec3型、左クリックしながらWASD(shiftで奥行き)
+                tp = v3[0];
                 makeFirstLine(tp);
                 //Debug.Log("tp(v3[0]) = " + tp);
 
@@ -604,28 +597,6 @@ public class NewQuadScript : MonoBehaviour
         saveManager.SetActive(true);
 
     }
-
-    public void SaveTest(Wrapper w, string s)
-    {
-        string jsdt = JsonUtility.ToJson(w);
-        //Debug.Log(jsdt);
-        Debug.Log("s = " + s);
-        StreamWriter writer = new StreamWriter(s, false);//初めに指定したデータの保存先を開く
-        writer.WriteLine(jsdt);//JSONデータを書き込み
-        writer.Flush();//バッファをクリアする
-        writer.Close();//ファイルをクローズする
-    }
-
-    public Wrapper LoadTest(string dp)
-    {
-        StreamReader reader = new StreamReader(dp);//
-        string datastr = reader.ReadToEnd();//ファイルの中身をすべて読み込む
-        reader.Close();//ファイルを閉じる
-        //読み込んだJSONファイルをPlayerData型に変換して返す
-        Wrapper jsrt = JsonUtility.FromJson<Wrapper>(datastr);
-        return jsrt;
-    }
-
 
     public void verticesNumPoint()
     {

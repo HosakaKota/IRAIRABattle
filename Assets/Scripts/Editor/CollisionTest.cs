@@ -24,9 +24,7 @@ public class CollisionTest : MonoBehaviour
     {
 
         timeManager = GameObject.FindObjectOfType<PlayTimeManager>();
-        //OutCollider = GameObject.Find("OutCollider").GetComponent<OutCollider>();
         defaultColor = GetComponent<MeshRenderer>().material;
-        //particleSystem = GameObject.Find("HitEffect").GetComponent<ParticleSystem>();
         StartCoroutine(CountUp());
     }
 
@@ -36,16 +34,9 @@ public class CollisionTest : MonoBehaviour
         {
             if (timeManager.startedGame)
             {
-                //timeManager.StartProtectingSystem(1);
-                //Debug.Log(collision.gameObject.name + "----------------------------------------------------------------------------------------------collisionenter");
-                //if (flag)
-                //{
-                //CounterEvent();
                 particle.Play();
                 OVRInput.SetControllerVibration(frequency, amplitude, OVRInput.Controller.RTouch);
                 timeManager.OnMissPlay();
-                // }
-                //GetComponent<MeshRenderer>().material = damgeColor;
             }
         }
 
@@ -57,11 +48,7 @@ public class CollisionTest : MonoBehaviour
         {
             if (timeManager.startedGame)
             {
-                Debug.Log(collision.gameObject.name + "---------collisionexit");
-                // flag = true;
-
                 particle.Stop();
-                //GetComponent<MeshRenderer>().material = defaultColor;
                 OVRInput.SetControllerVibration(0, 0, OVRInput.Controller.RTouch);
 
             }
@@ -84,12 +71,6 @@ public class CollisionTest : MonoBehaviour
 
     //hit end ----->  end count
 
-
-
-    void CounterEvent()
-    {
-        GameObject.Find("HitTimeCounter").GetComponent<Counter>().publicHitTimes++;
-    }
 
     IEnumerator CountUp()
     {

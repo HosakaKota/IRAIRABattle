@@ -107,7 +107,6 @@ public class PlayListManager : MonoBehaviour
             }
             else
             {
-                //Debug.Log("reddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd");
                 transform.GetChild(number + 4 * page).GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
             }
 
