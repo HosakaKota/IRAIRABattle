@@ -1,5 +1,6 @@
 # IRAIRABattle
 [コウゲイゲームショウ2023](https://www.t-kougei.ac.jp/activity/archives/2022/article_85356.html)に出展した、チーム制作物です。
+NCMBがサービスを終了したため、現在動作しません。
 
 ## 紹介動画
 
